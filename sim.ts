@@ -1,12 +1,6 @@
 interface Smartphone {
   credito: number;
-  numeroChiamate: number; //minuti effettuati
-
-  ricarica(costoRicarica: number): void; //aggiunge credito con un parametro che rappresenta l'ammontare della ricarica
-  chiama404(): number; //restituisce il credito residuo
-  chiamata(minuti: number): void; //prende come parametro il numero di minuti passati in chiamata e aggiorna il credito disponibile
-  getNumeroChiamate(): number; //restituisce i minuti passati in chiamata
-  azzeraChiamate(): void; //azzera la variabile delle chiamate
+  numeroChiamate: number;
 }
 
 class User implements Smartphone {
